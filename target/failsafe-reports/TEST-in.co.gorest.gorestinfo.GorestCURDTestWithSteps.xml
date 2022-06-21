@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="in.co.gorest.gorestinfo.GorestCURDTestWithSteps" time="18.475" tests="10" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="idea.version" value="2021.3.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\kgoth\IdeaProjects\week19-gorest.co.in-serenity - cucumber"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\kgoth\IdeaProjects\week19-gorest.co.in-serenity - cucumber"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\kgoth\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.2\bin;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\dotnet\;C:\Program Files\Apache\apache-maven-3.8.5\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\kgoth\AppData\Local\Microsoft\WindowsApps;C:\Users\kgoth\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\kgoth"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="kgoth"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.3.2 clean verify serenity:aggregate"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="test001" classname="in.co.gorest.gorestinfo.GorestCURDTestWithSteps" time="10.479"/>
+  <testcase name="test002" classname="in.co.gorest.gorestinfo.GorestCURDTestWithSteps" time="0.83"/>
+  <testcase name="test003" classname="in.co.gorest.gorestinfo.GorestCURDTestWithSteps" time="0.811"/>
+  <testcase name="test004" classname="in.co.gorest.gorestinfo.GorestCURDTestWithSteps" time="1.578"/>
+  <testcase name="test005" classname="in.co.gorest.gorestinfo.GorestCURDTestWithSteps" time="0.802"/>
+  <testcase name="test006" classname="in.co.gorest.gorestinfo.GorestCURDTestWithSteps" time="0.827">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.GorestCURDTestWithSteps.test006(GorestCURDTestWithSteps.java:86)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 75c987adac5bd1820e58fb137137e2474501428068d1ec0dd68ae05bcff564c9
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 21 Jun 2022 10:51:20 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 3252
+X-Pagination-Pages: 163
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"f96059ca1136db3192cbcbf825b90a19"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: affb78a7-0482-40d1-b3cb-3ee5f3678e3d
+X-Runtime: 0.021082
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 4776,
+        "name": "Samir Shukla36463",
+        "email": "samir_shukla7795@schiller-wuckert.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3305,
+        "name": "Sen. Ekadant Khanna",
+        "email": "khanna_sen_ekadant@bailey-cartwright.name",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3304,
+        "name": "Mrs. Charuchandra Mehra",
+        "email": "mrs_charuchandra_mehra@block-boyer.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3303,
+        "name": "Chaten Bhattathiri",
+        "email": "chaten_bhattathiri@feest-rowe.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3302,
+        "name": "Gautam Kaul",
+        "email": "gautam_kaul@mertz.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3301,
+        "name": "Anusuya Johar",
+        "email": "anusuya_johar@kunde.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3300,
+        "name": "Ghanshyam Trivedi",
+        "email": "trivedi_ghanshyam@balistreri.net",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3299,
+        "name": "Amb. Nawal Pandey",
+        "email": "amb_nawal_pandey@ziemann.org",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3298,
+        "name": "Priyala Naik LLD",
+        "email": "priyala_naik_lld@botsford-bernhard.name",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3297,
+        "name": "Narendra Jain",
+        "email": "narendra_jain@moore-funk.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3296,
+        "name": "Purnima Shah",
+        "email": "purnima_shah@heathcote-terry.name",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3295,
+        "name": "Bhaanumati Ahuja II",
+        "email": "ii_bhaanumati_ahuja@vonrueden-miller.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3294,
+        "name": "Ekadant Saini IV",
+        "email": "saini_ekadant_iv@ullrich.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3293,
+        "name": "Dulari Talwar",
+        "email": "dulari_talwar@bartell.co",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3292,
+        "name": "Sen. Udit Gowda",
+        "email": "gowda_udit_sen@friesen.org",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3291,
+        "name": "Ashlesh Guha V",
+        "email": "guha_v_ashlesh@rippin-stamm.com",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3290,
+        "name": "Aagneya Nair",
+        "email": "aagneya_nair@lesch.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3289,
+        "name": "Chaitan Talwar IV",
+        "email": "iv_chaitan_talwar@mclaughlin.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3288,
+        "name": "Bandhu Adiga",
+        "email": "bandhu_adiga@klein.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3287,
+        "name": "Divya Deshpande",
+        "email": "divya_deshpande@boehm-price.io",
+        "gender": "male",
+        "status": "inactive"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[16268 [main] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1. This will Verify if Total record is 20
+----------------------------------------------------------------------------
+16272 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test006
+-------------------------------------------------------------------
+16272 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 6
+]]></system-err>
+  </testcase>
+  <testcase name="test007" classname="in.co.gorest.gorestinfo.GorestCURDTestWithSteps" time="0.816">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.GorestCURDTestWithSteps.test007(GorestCURDTestWithSteps.java:94)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 75c987adac5bd1820e58fb137137e2474501428068d1ec0dd68ae05bcff564c9
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 21 Jun 2022 10:51:21 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 3252
+X-Pagination-Pages: 163
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"f96059ca1136db3192cbcbf825b90a19"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 9f10d429-98b9-493c-a775-2d48ad15b545
+X-Runtime: 0.021327
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 4776,
+        "name": "Samir Shukla36463",
+        "email": "samir_shukla7795@schiller-wuckert.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3305,
+        "name": "Sen. Ekadant Khanna",
+        "email": "khanna_sen_ekadant@bailey-cartwright.name",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3304,
+        "name": "Mrs. Charuchandra Mehra",
+        "email": "mrs_charuchandra_mehra@block-boyer.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3303,
+        "name": "Chaten Bhattathiri",
+        "email": "chaten_bhattathiri@feest-rowe.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3302,
+        "name": "Gautam Kaul",
+        "email": "gautam_kaul@mertz.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3301,
+        "name": "Anusuya Johar",
+        "email": "anusuya_johar@kunde.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3300,
+        "name": "Ghanshyam Trivedi",
+        "email": "trivedi_ghanshyam@balistreri.net",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3299,
+        "name": "Amb. Nawal Pandey",
+        "email": "amb_nawal_pandey@ziemann.org",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3298,
+        "name": "Priyala Naik LLD",
+        "email": "priyala_naik_lld@botsford-bernhard.name",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3297,
+        "name": "Narendra Jain",
+        "email": "narendra_jain@moore-funk.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3296,
+        "name": "Purnima Shah",
+        "email": "purnima_shah@heathcote-terry.name",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3295,
+        "name": "Bhaanumati Ahuja II",
+        "email": "ii_bhaanumati_ahuja@vonrueden-miller.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3294,
+        "name": "Ekadant Saini IV",
+        "email": "saini_ekadant_iv@ullrich.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3293,
+        "name": "Dulari Talwar",
+        "email": "dulari_talwar@bartell.co",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3292,
+        "name": "Sen. Udit Gowda",
+        "email": "gowda_udit_sen@friesen.org",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3291,
+        "name": "Ashlesh Guha V",
+        "email": "guha_v_ashlesh@rippin-stamm.com",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3290,
+        "name": "Aagneya Nair",
+        "email": "aagneya_nair@lesch.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3289,
+        "name": "Chaitan Talwar IV",
+        "email": "iv_chaitan_talwar@mclaughlin.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3288,
+        "name": "Bandhu Adiga",
+        "email": "bandhu_adiga@klein.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3287,
+        "name": "Divya Deshpande",
+        "email": "divya_deshpande@boehm-price.io",
+        "gender": "male",
+        "status": "inactive"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[17106 [main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: 2.id 3838 has name =Chaturbhuj Nehru DVM
+---------------------------------------------------------------------
+17124 [main] ERROR net.serenitybdd.core.Serenity - Index: 0, Size: 0
+17128 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test007
+-------------------------------------------------------------------
+17128 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 7
+]]></system-err>
+  </testcase>
+  <testcase name="test008" classname="in.co.gorest.gorestinfo.GorestCURDTestWithSteps" time="0.772"/>
+  <testcase name="test009" classname="in.co.gorest.gorestinfo.GorestCURDTestWithSteps" time="0.8">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.GorestCURDTestWithSteps.test009(GorestCURDTestWithSteps.java:114)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 75c987adac5bd1820e58fb137137e2474501428068d1ec0dd68ae05bcff564c9
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 21 Jun 2022 10:51:22 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 3252
+X-Pagination-Pages: 163
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"f96059ca1136db3192cbcbf825b90a19"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 48eefb7e-f616-4874-893c-8085d576be49
+X-Runtime: 0.022043
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 4776,
+        "name": "Samir Shukla36463",
+        "email": "samir_shukla7795@schiller-wuckert.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3305,
+        "name": "Sen. Ekadant Khanna",
+        "email": "khanna_sen_ekadant@bailey-cartwright.name",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3304,
+        "name": "Mrs. Charuchandra Mehra",
+        "email": "mrs_charuchandra_mehra@block-boyer.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3303,
+        "name": "Chaten Bhattathiri",
+        "email": "chaten_bhattathiri@feest-rowe.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3302,
+        "name": "Gautam Kaul",
+        "email": "gautam_kaul@mertz.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3301,
+        "name": "Anusuya Johar",
+        "email": "anusuya_johar@kunde.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3300,
+        "name": "Ghanshyam Trivedi",
+        "email": "trivedi_ghanshyam@balistreri.net",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3299,
+        "name": "Amb. Nawal Pandey",
+        "email": "amb_nawal_pandey@ziemann.org",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3298,
+        "name": "Priyala Naik LLD",
+        "email": "priyala_naik_lld@botsford-bernhard.name",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3297,
+        "name": "Narendra Jain",
+        "email": "narendra_jain@moore-funk.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3296,
+        "name": "Purnima Shah",
+        "email": "purnima_shah@heathcote-terry.name",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3295,
+        "name": "Bhaanumati Ahuja II",
+        "email": "ii_bhaanumati_ahuja@vonrueden-miller.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3294,
+        "name": "Ekadant Saini IV",
+        "email": "saini_ekadant_iv@ullrich.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3293,
+        "name": "Dulari Talwar",
+        "email": "dulari_talwar@bartell.co",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3292,
+        "name": "Sen. Udit Gowda",
+        "email": "gowda_udit_sen@friesen.org",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3291,
+        "name": "Ashlesh Guha V",
+        "email": "guha_v_ashlesh@rippin-stamm.com",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3290,
+        "name": "Aagneya Nair",
+        "email": "aagneya_nair@lesch.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3289,
+        "name": "Chaitan Talwar IV",
+        "email": "iv_chaitan_talwar@mclaughlin.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3288,
+        "name": "Bandhu Adiga",
+        "email": "bandhu_adiga@klein.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3287,
+        "name": "Divya Deshpande",
+        "email": "divya_deshpande@boehm-price.io",
+        "gender": "male",
+        "status": "inactive"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[18716 [main] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4.All ID has status =active
+----------------------------------------------------------------------------
+18717 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test009
+-------------------------------------------------------------------
+18717 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 9
+]]></system-err>
+  </testcase>
+  <testcase name="test010" classname="in.co.gorest.gorestinfo.GorestCURDTestWithSteps" time="0.76">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.GorestCURDTestWithSteps.test010(GorestCURDTestWithSteps.java:121)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 75c987adac5bd1820e58fb137137e2474501428068d1ec0dd68ae05bcff564c9
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 21 Jun 2022 10:51:23 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 3252
+X-Pagination-Pages: 163
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"f96059ca1136db3192cbcbf825b90a19"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 50214268-4125-42e5-bd0b-e64f4432b653
+X-Runtime: 0.023317
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 4776,
+        "name": "Samir Shukla36463",
+        "email": "samir_shukla7795@schiller-wuckert.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3305,
+        "name": "Sen. Ekadant Khanna",
+        "email": "khanna_sen_ekadant@bailey-cartwright.name",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3304,
+        "name": "Mrs. Charuchandra Mehra",
+        "email": "mrs_charuchandra_mehra@block-boyer.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3303,
+        "name": "Chaten Bhattathiri",
+        "email": "chaten_bhattathiri@feest-rowe.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3302,
+        "name": "Gautam Kaul",
+        "email": "gautam_kaul@mertz.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3301,
+        "name": "Anusuya Johar",
+        "email": "anusuya_johar@kunde.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3300,
+        "name": "Ghanshyam Trivedi",
+        "email": "trivedi_ghanshyam@balistreri.net",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3299,
+        "name": "Amb. Nawal Pandey",
+        "email": "amb_nawal_pandey@ziemann.org",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3298,
+        "name": "Priyala Naik LLD",
+        "email": "priyala_naik_lld@botsford-bernhard.name",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3297,
+        "name": "Narendra Jain",
+        "email": "narendra_jain@moore-funk.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3296,
+        "name": "Purnima Shah",
+        "email": "purnima_shah@heathcote-terry.name",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3295,
+        "name": "Bhaanumati Ahuja II",
+        "email": "ii_bhaanumati_ahuja@vonrueden-miller.biz",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3294,
+        "name": "Ekadant Saini IV",
+        "email": "saini_ekadant_iv@ullrich.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3293,
+        "name": "Dulari Talwar",
+        "email": "dulari_talwar@bartell.co",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3292,
+        "name": "Sen. Udit Gowda",
+        "email": "gowda_udit_sen@friesen.org",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3291,
+        "name": "Ashlesh Guha V",
+        "email": "guha_v_ashlesh@rippin-stamm.com",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3290,
+        "name": "Aagneya Nair",
+        "email": "aagneya_nair@lesch.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3289,
+        "name": "Chaitan Talwar IV",
+        "email": "iv_chaitan_talwar@mclaughlin.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3288,
+        "name": "Bandhu Adiga",
+        "email": "bandhu_adiga@klein.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3287,
+        "name": "Divya Deshpande",
+        "email": "divya_deshpande@boehm-price.io",
+        "gender": "male",
+        "status": "inactive"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[19520 [main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: 5.id 3829 has gender =female
+---------------------------------------------------------------------
+19520 [main] ERROR net.serenitybdd.core.Serenity - Index: 0, Size: 0
+19522 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test010
+-------------------------------------------------------------------
+19522 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 10
+]]></system-err>
+  </testcase>
+</testsuite>

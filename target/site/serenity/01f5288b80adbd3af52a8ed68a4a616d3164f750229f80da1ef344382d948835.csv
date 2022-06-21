@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"As a user I would like to verify to CRUD operation of the application","I create a new user on the application","SUCCESS","2022-06-21T11:51:09.710+01:00[Europe/London]","0.0","10.51"
+"Gorest CURD test with steps","This will create a new User","SUCCESS","2022-06-21T11:51:09.710+01:00[Europe/London]","0.0","10.38"
+"Gorest CURD test with steps","This will Fetch user by ID","SUCCESS","2022-06-21T11:51:20.131+01:00[Europe/London]","0.0","0.83"
+"Gorest CURD test with steps","This will Fetch user by ID","SUCCESS","2022-06-21T11:51:20.963+01:00[Europe/London]","0.0","0.81"
+"Gorest CURD test with steps","This will Delete user by ID","SUCCESS","2022-06-21T11:51:21.776+01:00[Europe/London]","0.0","1.58"
+"Gorest CURD test with steps","1. This will Verify if Total record is 20","SUCCESS","2022-06-21T11:51:23.357+01:00[Europe/London]","0.0","0.8"
+"Gorest CURD test with steps","4.All ID has status =active","SUCCESS","2022-06-21T11:51:25.837+01:00[Europe/London]","0.0","0.77"

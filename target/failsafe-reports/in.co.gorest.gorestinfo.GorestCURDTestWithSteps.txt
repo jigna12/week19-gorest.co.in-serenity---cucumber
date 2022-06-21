@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: in.co.gorest.gorestinfo.GorestCURDTestWithSteps
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 20.734 sec <<< FAILURE! - in in.co.gorest.gorestinfo.GorestCURDTestWithSteps
+test006(in.co.gorest.gorestinfo.GorestCURDTestWithSteps)  Time elapsed: 0.827 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.GorestCURDTestWithSteps.test006(GorestCURDTestWithSteps.java:86)
+
+test007(in.co.gorest.gorestinfo.GorestCURDTestWithSteps)  Time elapsed: 0.816 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.GorestCURDTestWithSteps.test007(GorestCURDTestWithSteps.java:94)
+
+test009(in.co.gorest.gorestinfo.GorestCURDTestWithSteps)  Time elapsed: 0.8 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.GorestCURDTestWithSteps.test009(GorestCURDTestWithSteps.java:114)
+
+test010(in.co.gorest.gorestinfo.GorestCURDTestWithSteps)  Time elapsed: 0.76 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.GorestCURDTestWithSteps.test010(GorestCURDTestWithSteps.java:121)
+
